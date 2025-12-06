@@ -19,7 +19,7 @@ File.open(filepath).each_line do |line|
       puts "problems: #{problems}"
     end
   else
-    # assume it's all operands
+    # assume it's all operators
     tokens.each_with_index do |s, i|
       total = problems[i].reduce(s.to_sym)
       puts "problem #{i+1} total: #{total}"
